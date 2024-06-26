@@ -1,12 +1,14 @@
 * {
     box-sizing: border-box;
     font-size: 62.5%;
+    font-family: Helvetica, sans-serif;
 }
 
 body {
     margin: 0;
     background-color: #eee7dc;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 100vh;
@@ -54,3 +56,101 @@ body {
     justify-content: space-between;
 }
 
+/* room card */
+.room-card {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    background-color: #fff;
+    padding: 3rem;
+    border-radius: 30px;
+}
+
+.room-info-wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+.room-reservation {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.room-info {
+    font-size: 2rem;
+    font-weight: 500;
+    white-space: pre-line;
+    color: #5b5b5b;
+}
+
+.room-img {
+    width: 180px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 24px;
+}
+
+img {
+    width: 100%;
+}
+
+.room-time {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.room-time > span {
+    font-size: 2rem;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.room-message-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 4.5rem;
+}
+
+.now-dot {
+    background-color: #ff729a;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+}
+
+.room-message {
+    font-size: 2.5rem;
+    font-weight: 600;
+
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    word-break: break-all;
+}
+
+.heart-icon-wrapper {
+    width: 50px;
+    height: 50px;
+    border: 2px solid black;
+    border-radius: 50%;
+    padding: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.3s;
+    font-size: 3rem;
+}
+
+.heart-icon-wrapper:hover {
+    background-color: #000000;
+    color: #fff;
+}
+
+#heart-icon:hover {
+    mix-blend-mode:lighten;
+}
