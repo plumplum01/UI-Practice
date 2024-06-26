@@ -1,0 +1,56 @@
+* {
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body {
+    margin: 0;
+    background-color: #eee7dc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.country {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.price {
+    font-size: 2.4rem;
+    font-weight: 700;
+    color: #201d1d;
+}
+
+#apply-btn {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #201d1d;
+    background-color: #ff729a;
+    border-radius: 100px;
+    border: none;
+    padding: 1.6rem 2.6rem;
+    transition: all ease-in-out 0.3s;
+}
+
+#apply-btn:hover {
+    background-color: #ff9eba;
+}
+
+.apply-wrapper {
+    background-color: #fff;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 2.2rem 2rem 2.8rem;
+    width: 40rem;
+    border-radius: 120px;
+}
+
+.country-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
