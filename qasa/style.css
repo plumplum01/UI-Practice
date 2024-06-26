@@ -11,7 +11,8 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 300vh;
+    gap: 2rem;
 }
 
 .country {
@@ -86,7 +87,7 @@ body {
 
 .room-img {
     width: 180px;
-    height: 200px;
+    height: 180px;
     overflow: hidden;
     border-radius: 24px;
 }
@@ -153,4 +154,136 @@ img {
 
 #heart-icon:hover {
     mix-blend-mode:lighten;
+}
+
+/* type */
+.room-type {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#type-btn {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #201d1d;
+    background-color: #ffffff;
+    border-radius: 100px;
+    border: none;
+    padding: 1.6rem 2.6rem;
+    transition: all ease-in-out 0.3s;
+    width: fit-content;
+}
+
+#type-btn:hover {
+    background-color: #efeaea;
+}
+
+.room-type-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.room-type-wrapper {
+    background-color: #fff;
+    border: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    border-radius: 30px 30px 0 0;
+    padding: 3rem;
+}
+
+.room-type-btnset {
+    background-color: #fff;
+    border: 24px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 500px;
+    border-radius: 0 0 30px 30px;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.room-type-btnset button:first-child {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: #d1d1d1;
+    background-color: #ececec;
+    border-radius: 100px;
+    border: none;
+    padding: 1.6rem 2.6rem;
+    transition: all ease-in-out 0.3s;
+    width: fit-content;
+}
+
+.room-type-btnset button:last-child {
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #ffffff;
+    background-color: #4a260b;
+    border-radius: 100px;
+    border: none;
+    padding: 1.6rem 2.6rem;
+    transition: all ease-in-out 0.3s;
+    width: fit-content;
+}
+
+
+h3 {
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+input[type="checkbox"] {
+    display: none;
+}
+
+input[type="checkbox"] + label {
+    cursor: pointer;
+    vertical-align: middle;
+    font-size: 2.6rem;
+    -webkit-user-drag: none;
+}
+
+input[type="checkbox"] + label:before {
+    content:"";
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    border: 1px solid  #5b5b5b;
+    border-radius: 5px;
+}
+input[type="checkbox"]:checked + label:before {
+    content:"☃";
+    display: inline-block;
+    vertical-align: middle;
+    width: 24px;
+    height: 24px;
+    border: 1px solid  #5b5b5b;
+    background-color: #5b5b5b;
+    color: white;
+    background-position: 50%;
+    border-radius: 5px;
+    font-size: 18px; /* 여기서 폰트 크기를 조절 */
+    line-height: 24px; /* 아이콘이 중앙에 오도록 조절 */
+}
+
+.room-type-wrapper div {
+    padding-left: 3rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.room-type-wrapper > div > span {
+    padding-left: 3.6rem;
+    font-size: 1.4rem;
+    color: #757575;
 }
