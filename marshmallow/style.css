@@ -1,0 +1,54 @@
+* {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: #212120;
+    overflow: hidden;
+}
+
+h1,h2,h3,h3,h3 {
+    margin: 0;
+}
+
+h1 {
+    font-family: futura-pt, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    white-space: pre-line;
+    font-size: 22rem;
+    line-height: 177px;
+    letter-spacing: -10.8px;
+}
+
+.title {
+    font-family: garamond-premier-pro-display, serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 6rem;
+    line-height: 58.8px;
+    white-space: pre-line;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 2rem 3rem;
+}
+
+.container > h1, .container > .inner-container > span {
+    color: #fff;
+}
+
+#logo-wrapper {
+    width: 400px;
+}
+
+.inner-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
